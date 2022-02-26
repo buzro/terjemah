@@ -9,9 +9,7 @@ if($method == 'POST'){
 	
   $kalimat = $json->result->parameters->kalimat;
   $tujuan =  $json->result->parameters->tujuan;
-	var_dump($json);
-	var_dump($kalimat);
-	var_dump($tujuan);
+	
   //mengubah teks biasa ke urlencode
   $text = urlencode($kalimat);
 
