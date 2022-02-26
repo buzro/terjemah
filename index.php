@@ -4,6 +4,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 if($method == 'POST'){
   // medapatkan hasil dari dialogflow
   $requestBody = file_get_contents('php://input');
+	var_dump($requestBody);
 	$json = json_decode($requestBody);
   $kalimat = $json->result->parameters->kalimat;
   $tujuan =  $json->result->parameters->tujuan;
