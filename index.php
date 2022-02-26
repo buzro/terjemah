@@ -49,6 +49,6 @@ if($method == 'POST'){
 		echo json_encode($response);
 //method harus POST kalau tidak ya balas dengan ini saja
 }else{
-	echo "Method not allowed";
+	echo "hanya menerima method POST kawan";
 }
 ?>
